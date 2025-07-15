@@ -173,10 +173,10 @@ const MenuSection: React.FC = () => {
         <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
           <h2 className="text-h2-size md:text-display-lg-size font-light text-white mb-6 tracking-wider">
-            {t('our_story_section.title_part1')} <span className="text-primary">{t('our_story_section.title_part2')}</span>
+            {t('our_story_section.title_part1')} <span className="text-primary">{t('hero_section.menu')}</span>
           </h2>
           <p className="text-h5-size text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Discover our carefully crafted selection, prepared with passion and finest ingredients
+            {t('menu_page.main_description')}
           </p>
         </div>
 
@@ -296,7 +296,7 @@ const MenuSection: React.FC = () => {
 
         <div className="text-center mt-16">
           <button className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-h5-size tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
-            Download Full Menu
+            {t('menu_page.download_full_menu')}
           </button>
         </div>
       </div>

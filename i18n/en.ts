@@ -29,6 +29,7 @@ export const en = {
     },
     "menu_page": {
         "main_description": "Discover our carefully crafted selection, prepared with passion and finest ingredients",
+        "download_full_menu": "Download Full Menu",
         "categories": {
             "dolci": {
                 "name": "DOLCI FOR A GOOD CAUSE",

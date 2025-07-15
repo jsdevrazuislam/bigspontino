@@ -29,6 +29,7 @@ export const de = {
     },
     "menu_page": {
         "main_description": "Entdecken Sie unsere sorgfältig zusammengestellte Auswahl, zubereitet mit Leidenschaft und den feinsten Zutaten",
+        "download_full_menu": "Vollständige Speisekarte herunterladen",
         "categories": {
             "dolci": {
                 "name": "DOLCI FÜR EINEN GUTEN ZWECK",
