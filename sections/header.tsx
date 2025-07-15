@@ -43,6 +43,7 @@ const Header = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="flex cursor-pointer items-center space-x-2 text-primary hover:text-amber-300 transition-colors duration-300 group"
+            aria-label='Menu Open'
           >
             <Menu className="w-6 h-6 group-hover:rotate-90 transition-transform duration-300" />
             <span className="text-lg font-light tracking-wider">Menu</span>
@@ -54,9 +55,9 @@ const Header = () => {
 
           <div className="flex items-center">
             <div className="hidden md:flex items-center space-x-2 text-primary mr-6">
-              <button onClick={() => setLanguage('de')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">De</button>
+              <button aria-label='De' onClick={() => setLanguage('de')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">De</button>
               <span className="text-amber-600">|</span>
-              <button onClick={() => setLanguage('en')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">En</button>
+              <button aria-label='En' onClick={() => setLanguage('en')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">En</button>
             </div>
 
             <div className="flex items-center space-x-2 xl:mr-6">
@@ -64,7 +65,7 @@ const Header = () => {
               <Facebook className="w-5 h-5 text-primary hover:text-amber-300 cursor-pointer transition-colors duration-300 hover:scale-110 transform" />
             </div>
 
-            <button className="bg-primary hidden xl:block cursor-pointer rounded-md text-black px-6 py-2 font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-lg">
+            <button aria-label='Book A Table' className="bg-primary hidden xl:block cursor-pointer rounded-md text-black px-6 py-2 font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-lg">
               {t('hero_section.book_a_table')}
             </button>
           </div>
@@ -77,6 +78,7 @@ const Header = () => {
           <button
             onClick={handleCloseMenu}
             className="absolute cursor-pointer top-6 right-6 text-primary hover:text-amber-300"
+            aria-label='Close'
           >
             <X className="w-8 h-8" />
           </button>

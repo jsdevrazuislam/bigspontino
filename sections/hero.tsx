@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-[10s] ease-out"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
+          backgroundImage: `url('/assets/hero.webp')`
         }}
       />
 
@@ -33,14 +33,14 @@ const HeroSection = () => {
             <p className="text-xl md:text-2xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
               {t('hero_section.description')}
             </p>
-            <button className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-lg font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
+            <button aria-label='Explore Menu' className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-lg font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
               {t('hero_section.explore_menu')}
             </button>
           </div>
         </div>
       </div>
 
-      <Link href='/#our_story' className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
+      <Link aria-label="Scroll to Our Story section" href='/#our_story' className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce" />
         </div>

@@ -74,7 +74,7 @@ const AboutSection: React.FC = () => {
           }`}>
             <div className="relative">
               <Image
-                src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="/assets/story.webp"
                 alt="Chef preparing food"
                 className="w-full h-96 object-cover rounded-lg shadow-2xl"
                 width={800}

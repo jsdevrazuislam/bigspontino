@@ -118,14 +118,14 @@ const MenuSection: React.FC = () => {
         description: t('menu_page.menu_items.dolci_seasonal_love_is_peachy.description'),
         price: '€10',
         dietary: 'VEG',
-        image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+        image: '/assets/menu-1.jpeg'
       },
       {
         name: t('menu_page.menu_items.dolci_seasonal_rainbow_tiramisu.name'),
         description: t('menu_page.menu_items.dolci_seasonal_rainbow_tiramisu.description'),
         price: '€12',
         dietary: 'VEG',
-        image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+        image: '/assets/menu-2.jpeg'
       }
     ],
     'cocktails-signature': [
@@ -133,14 +133,14 @@ const MenuSection: React.FC = () => {
         name: t('menu_page.menu_items.cocktails_signature_squadra_spritz.name'),
         description: t('menu_page.menu_items.cocktails_signature_squadra_spritz.description'),
         price: '€14',
-        image: 'https://images.pexels.com/photos/8375036/pexels-photo-8375036.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+        image: '/assets/menu-3.webp',
         dietary: 'VEG',
       },
       {
         name: t('menu_page.menu_items.cocktails_signature_golden_hour.name'),
         description: t('menu_page.menu_items.cocktails_signature_golden_hour.description'),
         price: '€16',
-        image: 'https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+        image: '/assets/menu-4.jpeg',
         dietary: 'VEG',
       }
     ]
@@ -195,6 +195,7 @@ const MenuSection: React.FC = () => {
                     ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-black shadow-2xl'
                     : 'bg-gradient-to-r from-zinc-800 to-zinc-700 text-white hover:from-zinc-700 hover:to-zinc-600'
                     }`}
+                    aria-label='Select Category'
                 >
                   <div className="flex items-center justify-between p-6 border-b border-white/10">
                     <div className="flex-1">
@@ -225,6 +226,7 @@ const MenuSection: React.FC = () => {
                         const isActive = activeSubMenu === `${category.id}-${subMenu.id}`;
                         return (
                           <button
+                            aria-label='SubMenu'
                             key={subMenu.id}
                             onClick={() => handleSubMenuClick(category.id, subMenu.id)}
                             className={`flex cursor-pointer items-center space-x-2 px-6 py-4 transition-all duration-300 transform hover:scale-105 ${isActive
@@ -295,7 +297,7 @@ const MenuSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-h5-size tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
+          <button aria-label='Download Button' className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-h5-size tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
             {t('menu_page.download_full_menu')}
           </button>
         </div>
