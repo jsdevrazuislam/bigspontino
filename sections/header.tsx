@@ -10,6 +10,11 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { t, setLanguage } = useTranslation();
 
+
+  function handleCloseMenu(){
+    setIsMenuOpen(false)
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -33,7 +38,7 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'
       }`}>
-      <div className="container mx-auto px-2 md:px-6 py-4">
+      <div className="container py-4">
         <div className="flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -47,19 +52,19 @@ const Header = () => {
             <BouncingLogo />
           </div>
 
-          <div className="flex items-center md:space-x-6">
-            <div className="hidden md:flex items-center space-x-2 text-primary">
+          <div className="flex items-center">
+            <div className="hidden md:flex items-center space-x-2 text-primary mr-6">
               <button onClick={() => setLanguage('de')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">De</button>
               <span className="text-amber-600">|</span>
               <button onClick={() => setLanguage('en')} className="hover:text-amber-300 cursor-pointer transition-colors duration-300">En</button>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 xl:mr-6">
               <Instagram className="w-5 h-5 text-primary hover:text-amber-300 cursor-pointer transition-colors duration-300 hover:scale-110 transform" />
               <Facebook className="w-5 h-5 text-primary hover:text-amber-300 cursor-pointer transition-colors duration-300 hover:scale-110 transform" />
             </div>
 
-            <button className="bg-primary hidden md:block cursor-pointer rounded-md text-black px-6 py-2 font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-lg">
+            <button className="bg-primary hidden xl:block cursor-pointer rounded-md text-black px-6 py-2 font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-lg">
               {t('hero_section.book_a_table')}
             </button>
           </div>
@@ -70,15 +75,15 @@ const Header = () => {
         }`}>
         <div className="flex flex-col items-center justify-center h-full space-y-8 text-primary">
           <button
-            onClick={() => setIsMenuOpen(false)}
+            onClick={handleCloseMenu}
             className="absolute cursor-pointer top-6 right-6 text-primary hover:text-amber-300"
           >
             <X className="w-8 h-8" />
           </button>
 
           <nav className="text-center space-y-4">
-            <a href="#menu" className="block text-h4-size tracking-wider hover:text-amber-300 transition-colors duration-300">{t('hero_section.menu')}</a>
-            <a href="#our_story" className="block text-h4-size tracking-wider hover:text-amber-300 transition-colors duration-300">{t('hero_section.our_story')}</a>
+            <a onClick={handleCloseMenu} href="#menu" className="block text-h4-size tracking-wider hover:text-amber-300 transition-colors duration-300">{t('hero_section.menu')}</a>
+            <a onClick={handleCloseMenu} href="#our_story" className="block text-h4-size tracking-wider hover:text-amber-300 transition-colors duration-300">{t('hero_section.our_story')}</a>
           </nav>
 
           <div className="flex items-center space-x-6 mt-6">

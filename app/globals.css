@@ -108,6 +108,6 @@ html {
 
 @layer utilities {
   .container {
-    @apply !max-w-[90em] mx-auto px-6 py-4;
+    @apply !max-w-[90em] mx-auto px-2 md:px-6 py-4;
   }
 }

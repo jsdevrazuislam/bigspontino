@@ -168,8 +168,8 @@ const MenuSection: React.FC = () => {
   };
 
   return (
-    <section ref={sectionRef} className="py-20 bg-zinc-900">
-      <div className="container mx-auto px-6">
+    <section id='menu' ref={sectionRef} className="py-20 bg-zinc-900">
+      <div className="container">
         <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
           <h2 className="text-h2-size md:text-display-lg-size font-light text-white mb-6 tracking-wider">

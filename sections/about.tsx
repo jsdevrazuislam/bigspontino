@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
 
   return (
     <section id='our_story' ref={sectionRef} className="py-20 bg-black">
-      <div className="container mx-auto px-6">
+      <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className={`transform transition-all duration-1000 ${
             isVisible ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
