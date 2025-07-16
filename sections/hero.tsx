@@ -26,9 +26,8 @@ const HeroSection = () => {
         <div className="text-center text-white max-w-4xl mx-auto px-6">
           <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}>
-            <h2 className="text-5xl md:text-7xl font-light mb-8 tracking-wider">
-              {t('culinary_heading')}
-              <span className="block text-primary font-normal">{t('culinary_excellence_heading')}</span>
+            <h2 className="text-5xl md:text-7xl font-light text-primary uppercase mb-8 tracking-[0.2em]">
+              Big spontino
             </h2>
             <p className="text-xl md:text-2xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
               {t('culinary_excellence_tagline')}

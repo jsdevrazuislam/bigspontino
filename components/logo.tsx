@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { motion, Variants } from "framer-motion"
+import { cn } from "@/lib/utils"
 
 const text = "Big spontino"
 
@@ -24,14 +25,14 @@ const bounceChar: Variants = {
   },
 }
 
-export default function BouncingLogo() {
+export default function BouncingLogo({ className } : { className?:string}) {
   return (
     <Link href="/" className="inline-block">
       <motion.div
         variants={bounceContainer}
         initial="initial"
         whileHover="hover"
-        className="flex cursor-pointer text-lg md:text-xl text-primary font-bold uppercase"
+        className={cn(`flex cursor-pointer tracking-[0.2em] text-lg md:text-xl text-primary font-bold uppercase`, className)}
       >
         {text.split("").map((char, index) => (
           <motion.span
