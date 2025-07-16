@@ -27,20 +27,20 @@ const HeroSection = () => {
           <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}>
             <h2 className="text-5xl md:text-7xl font-light mb-8 tracking-wider">
-              {t('hero_section.culinary')}
-              <span className="block text-primary font-normal">{t('hero_section.excellence')}</span>
+              {t('culinary_heading')}
+              <span className="block text-primary font-normal">{t('culinary_excellence_heading')}</span>
             </h2>
             <p className="text-xl md:text-2xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
-              {t('hero_section.description')}
+              {t('culinary_excellence_tagline')}
             </p>
             <button aria-label='Explore Menu' className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-lg font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
-              {t('hero_section.explore_menu')}
+              {t('explore_menu_button')}
             </button>
           </div>
         </div>
       </div>
 
-      <Link aria-label="Scroll to Our Story section" href='/#our_story' className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
+      <Link aria-label="Scroll to Our Story section" href='/#menu' className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce" />
         </div>

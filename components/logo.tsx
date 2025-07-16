@@ -31,7 +31,7 @@ export default function BouncingLogo() {
         variants={bounceContainer}
         initial="initial"
         whileHover="hover"
-        className="flex cursor-pointer text-h6-size md:text-h4-size text-primary tracking-[0.2em] uppercase"
+        className="flex cursor-pointer text-lg md:text-xl text-primary font-bold uppercase"
       >
         {text.split("").map((char, index) => (
           <motion.span
