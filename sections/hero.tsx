@@ -33,9 +33,9 @@ const HeroSection = () => {
             <p className="text-xl md:text-2xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
               {t('culinary_excellence_tagline')}
             </p>
-            <button aria-label='Explore Menu' className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-lg font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
+            <Link href='/#menu' className="bg-primary cursor-pointer rounded-md text-black px-12 py-4 text-lg font-medium tracking-wide hover:bg-amber-300 transition-all duration-300 hover:scale-105 transform hover:shadow-2xl">
               {t('explore_menu_button')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

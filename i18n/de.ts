@@ -1,9 +1,9 @@
 export const de = {
   home: "Startseite",
   menu: "Il Menu",
-  events: "Events",
+  events: "Eventi",
   history: "La Storia",
-  impressions: "Bildgalerie",
+  impressions: "Impressioni",
   contact: "Contatto",
   jobs: "Lavori",
   openingHours: {
